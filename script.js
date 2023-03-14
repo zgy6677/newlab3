@@ -20,7 +20,7 @@ map.addControl(
     new MapboxGeocoder({
         accessToken: mapboxgl.accessToken,
         mapboxgl: mapboxgl,
-        countries: "cn" //Try searching for places inside and outside of canada to test the geocoder
+        countries: "ca" //Try searching for places inside and outside of canada to test the geocoder
     })
 );
 
