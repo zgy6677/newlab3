@@ -70,12 +70,12 @@ map.on('mouseleave', 'toronto-fill', () => {
 
 
 map.on('click', 'toronto-fill', (e) => {
-    new mapboxgl.Popup() //Declare new popup object on each click
-        .setLngLat(e.lngLat) //Use method to set coordinates of popup based on mouse click location
-        .setHTML("<b>PartofToronto:</b> " + e.features[0].properties.PRENAME + "<br>" +
-            "Population: " + e.features[0].properties.POP2021 + "<br>" +
-            "EU Origin:" + e.features[0].properties.euorigin + "<br>" +
-            "Asia Origin:" + e.features[0].properties.asiaorigin) //Use click event properties to write text for popup
+    new mapboxgl.Popup() 
+        .setLngLat(e.lngLat) 
+        .setHTML("<b>Part of Toronto:</b> " + e.features[0].properties.PART + "<br>" +
+            "Population: " + e.features[0].properties.POP + "<br>" +
+            "EU Origin:" + e.features[0].properties.EU + "<br>" +
+            "Asia Origin:" + e.features[0].properties.ASIA) //Use click event properties to write text for popup
         .addTo(map); //Show popup on map
 })
 
